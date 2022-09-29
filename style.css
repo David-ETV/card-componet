@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@600&display=swap');
+
+/* HTML5 Reset Stylesheet*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;  
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+:root{
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --Cian: hsl(172deg 66% 30%);
+  --Cian-Dark: hsl(158, 49%, 14%);
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Cream);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 40rem;
+  background: var(--White);
+  border-radius: 10px;
+}
+
+section{
+  padding: 1.8rem;
+}
+
+#desktop-image{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#mobile-image{
+  display: none;
+}
+
+h4{
+  letter-spacing: .3rem;
+  padding-bottom: 1.8rem;
+  opacity: .6;
+}
+
+h1{
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-bottom: 1.8rem;
+}
+
+h3{
+  opacity: .6;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  padding-bottom: 2rem; 
+}
+
+h2{
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: var(--Cian);
+}
+
+h6{
+  text-decoration:line-through;
+  font-size: .7rem; 
+}
+
+button{
+  width: 100%;
+  height: 3rem;
+  background-color: var(--Cian);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+}
+button:hover{
+  background-color: var(--Cian-Dark);
+}
+
+@media (max-width: 385px){
+  .container{
+    grid-template-columns:1fr;
+    max-width: 300px;
+    margin: 1.5rem 0;
+  }
+  #desktop-image{
+    display: none;
+  }
+  #mobile-image{
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  h3{
+    font-size: .9rem;
+  }
+
+}
