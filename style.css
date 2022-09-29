@@ -148,7 +148,7 @@ h1{
   padding-bottom: 1.8rem;
 }
 
-h3{
+p{
   opacity: .6;
   line-height: 1.5rem;
   padding-bottom: 2rem;
@@ -204,7 +204,7 @@ button:hover{
   h1{
     font-size: 1.8rem;
   }
-  h3{
+  p{
     font-size: .9rem;
   }
 
